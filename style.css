@@ -11,6 +11,28 @@ body{
   display: none;
 }
 
+#navegação>div{
+  position: relative;
+  width: 10%;
+  height: 20%;
+}
+
+#navegacao nav{
+  display: flex;
+  justify-content: space-around;
+  font-size: 13pt;
+  width: 85%;
+}
+
+#navegacao nav a{
+  font-family: 'Indie Flower', 'cursive';
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 0 2px;
+}
+
 header{
   display: flex;
   align-items: center;
@@ -31,6 +53,22 @@ header h1{
   font-size: 18pt;
   margin: 0;
   font-weight: bolder;
+}
+
+@media screen and (min-width: 470px){
+  header>div{
+    display: none;
+  }
+   header h1{
+    font-size: 24pt;
+  }
+   #navegacao{
+    display: flex;
+    justify-content: space-between;
+  }
+   #navegacao input{
+    display: none;
+  }
 }
 
 /* Ícone de Lupa */
